@@ -1,0 +1,10 @@
+config:
+  target: 'http://localhost:2000'
+  processor: './processor.js'
+scenarios:
+  - flow:
+      - post:
+          url: '/store'
+          beforeRequest: 'upload'
+      - get:
+          url: '/fetch/646b51c2223b0bee271b525b'

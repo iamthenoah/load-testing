@@ -1,0 +1,10 @@
+config:
+  target: 'http://localhost:4000'
+  http:
+    pool: 2
+scenarios:
+  - flow:
+      - loop:
+          - get:
+              url: /fetch/111268669491701062956
+            count: 1
